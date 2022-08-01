@@ -5,7 +5,6 @@ import { ViewChild } from "@angular/core";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { MatTableDataSource } from "@angular/material/table";
-import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 
 export interface UserData {
@@ -14,7 +13,6 @@ export interface UserData {
   title: any;
   body: any;
 }
-
 @Component({
   selector: "app-itemshared",
   templateUrl: "./itemshared.component.html",
@@ -31,7 +29,6 @@ export class ItemsharedComponent implements OnInit {
   posts: any;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-
   constructor(
     private router: Router,
     private dataService: DataService,
@@ -58,7 +55,6 @@ export class ItemsharedComponent implements OnInit {
   }
   data: any = {};
   ngOnInit(): void {}
-
   gotoHomepage() {
     this.router.navigateByUrl("");
   }
