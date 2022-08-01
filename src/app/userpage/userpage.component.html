@@ -1,13 +1,5 @@
-<p>userpage works!</p>
+<p>USER PAGE</p>
 <button (click)="gotoHomepage()">Go to homepage</button>
-<div class="user-list">
-  <div *ngFor="let student of students">
-    <p>Name: {{ student.name }}</p>
-    <p>Phone: {{ student.phone }}</p>
-    <p>Email: {{ student.email }}</p>
-    <button (click)="edit(student.email)">Edit student</button>
-  </div>
-</div>
 <div>
   <br />
   <div class="container">
@@ -53,7 +45,7 @@
                   <mat-header-cell *matHeaderCellDef></mat-header-cell>
                   <mat-cell *matCellDef="let element">
                     <a (click)="editPost(element.position)" type="button">
-                      <mat-icon class="icon">delete</mat-icon>
+                      <mat-icon class="icon">edit</mat-icon>
                     </a>
                   </mat-cell>
                 </ng-container>
