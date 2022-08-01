@@ -48,57 +48,57 @@ export class DataService {
       body: "Body 6",
     },
   ];
-  contacts = [
-    {
-      id: 0,
-      name: "Contact 001",
-      description: "Contact 001 des",
-      email: "c001@email.com",
-    },
-    {
-      id: 1,
-      name: "Contact 001",
-      description: "Contact 001 des",
-      email: "c001@email.com",
-    },
-    {
-      id: 2,
-      name: "Contact 002",
-      description: "Contact 002 des",
-      email: "c002@email.com",
-    },
-    {
-      id: 3,
-      name: "Contact 003",
-      description: "Contact 003 des",
-      email: "c003@email.com",
-    },
-    {
-      id: 4,
-      name: "Contact 004",
-      description: "Contact 004 des",
-      email: "c004@email.com",
-    },
-    {
-      id: 5,
-      name: "Contact 001",
-      description: "Contact 001 des",
-      email: "c001@email.com",
-    },
-  ];
+  // contacts = [
+  //   {
+  //     id: 0,
+  //     name: "Contact 001",
+  //     description: "Contact 001 des",
+  //     email: "c001@email.com",
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "Contact 001",
+  //     description: "Contact 001 des",
+  //     email: "c001@email.com",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Contact 002",
+  //     description: "Contact 002 des",
+  //     email: "c002@email.com",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Contact 003",
+  //     description: "Contact 003 des",
+  //     email: "c003@email.com",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Contact 004",
+  //     description: "Contact 004 des",
+  //     email: "c004@email.com",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "Contact 001",
+  //     description: "Contact 001 des",
+  //     email: "c001@email.com",
+  //   },
+  // ];
   // categories = [
   //   { value: "Web-Development", viewValue: "Web Development" },
   //   { value: "Android-Development", viewValue: "Android Development" },
   //   { value: "IOS-Development", viewValue: "IOS Development" },
   // ];
-  public getContacts(): Array<{
-    id: any;
-    name: any;
-    description: any;
-    email: any;
-  }> {
-    return this.contacts;
-  }
+  // public getContacts(): Array<{
+  //   id: any;
+  //   name: any;
+  //   description: any;
+  //   email: any;
+  // }> {
+  //   return this.contacts;
+  // }
   constructor(private httpClient: HttpClient) {}
 
   getData(): Observable<Post[]> {
