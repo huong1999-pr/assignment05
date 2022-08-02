@@ -21,6 +21,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MaterialModule} from './material.module'
 import {DataService} from './data/data.service'; 
 import {FormsModule} from '@angular/forms';
 @NgModule({
