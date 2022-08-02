@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+ 
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { ItemsharedComponent } from '../itemshared/itemshared.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -33,6 +35,6 @@ import { MatInputModule } from '@angular/material/input';
       },
     ]),
   ],
-  exports: [],
+  exports: [ ],
 })
 export class SharedModule {}
