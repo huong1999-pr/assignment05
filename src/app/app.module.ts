@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ExponentialStrengthPipe } from 'src/pipes/custom.pipe';
-
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,9 +12,6 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserpageComponent } from './userpage/userpage.component';
 import { canActivateDemo } from 'src/router-guards/canActivate';
 import { canDeActivateDemo } from 'src/router-guards/canDeActive';
-import { DemoService } from 'src/services/demo.service';
- 
- 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
@@ -54,7 +50,7 @@ import {FormsModule} from '@angular/forms';
     MatFormFieldModule,
     FormsModule
   ],
-  providers: [canActivateDemo, canDeActivateDemo, DemoService,DataService],
+  providers: [canActivateDemo, canDeActivateDemo, DataService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
